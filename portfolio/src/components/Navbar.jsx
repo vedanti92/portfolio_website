@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar fixed-top">
       <div className="container d-flex justify-content-between align-items-center">
         <a href="#home" className="navbar-brand fw-bold">
-          Portfolio.
+          Portfolio<span>.</span>
         </a>
       </div>
     </nav>
