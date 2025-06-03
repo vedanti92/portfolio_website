@@ -11,9 +11,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar fixed-top">
-      <div className="container d-flex justify-content-between align-items-center">
-        <a href="#home" className="navbar-brand fw-bold">
-          Portfolio<span>.</span>
+      <div className="container d-flex justify-content-between align-items-center px-3">
+        <a href="#home" className="navbar-brand fw-bold text-primary">
+          Portfolio<span className="text-accent">.</span>
         </a>
       </div>
     </nav>
