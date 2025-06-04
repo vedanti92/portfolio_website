@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
@@ -29,6 +41,19 @@ const Navbar = () => {
             </a>
           ))}
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="d-md-none btn btn-link text-dark p-0"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMobileMenuOpen ? (
+            <X size={24} style={{ color: "#9398a1" }} />
+          ) : (
+            <Menu size={24} style={{ color: "#9398a1" }} />
+          )}
+        </button>
       </div>
     </nav>
   );
