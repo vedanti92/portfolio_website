@@ -23,7 +23,18 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar fixed-top">
+    <nav
+      className={`navbar navbar-expand-md fixed-top ${
+        isScrolled
+          ? "bg-light shadow-sm py-2 backdrop-blur"
+          : "bg-transparent py-3"
+      } transition`}
+      style={{
+        transition: "all 0.3s ease",
+        backdropFilter: isScrolled ? "blur(10px)" : "none",
+        zIndex: 1050,
+      }}
+    >
       <div className="container d-flex justify-content-between align-items-center px-3">
         <a
           href="#home"
