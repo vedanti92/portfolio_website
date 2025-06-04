@@ -58,6 +58,7 @@ const Navbar = () => {
           className="d-md-none btn btn-link text-dark p-0"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
+          style={{ zIndex: 1060, position: "relative" }}
         >
           {isMobileMenuOpen ? (
             <X size={24} style={{ color: "#9398a1" }} />
@@ -65,6 +66,32 @@ const Navbar = () => {
             <Menu size={24} style={{ color: "#9398a1" }} />
           )}
         </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`d-md-none position-fixed top-0 start-0 w-100 h-100 pt-5 px-3 ${
+          isMobileMenuOpen ? "translate-none" : "translate-end"
+        }`}
+        style={{
+          transform: isMobileMenuOpen ? "translateX(0)" : "translateX(100%)",
+          transition: "transform 0.3s ease",
+          zIndex: 1020
+        }}
+      >
+        <div className="d-flex flex-column gap-4 mt-4">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="fs-5 fw-medium nav-link"
+              style={{ color: "#9398a1" }}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
       </div>
     </nav>
   );
