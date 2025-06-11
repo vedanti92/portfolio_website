@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import "./Footer.css";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -14,7 +15,7 @@ const Footer = () => {
     <footer className="border-top py-5">
       <div className="footer-container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 px-5">
         <div>
-          <p className="text-muted">
+          <p style={{ color: "#9ca2aa" }}>
             &copy; {new Date().getFullYear()} Vedanti Bagade. All rights
             reserved.
           </p>
