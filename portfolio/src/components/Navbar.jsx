@@ -35,7 +35,7 @@ const Navbar = () => {
         zIndex: 1050,
       }}
     >
-      <div className="container d-flex justify-content-between align-items-center px-3">
+      <div className="navbar-container d-flex justify-content-between align-items-center px-3">
         <a
           href="#home"
           className="navbar-brand fw-bold"
