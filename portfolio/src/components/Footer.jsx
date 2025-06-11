@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowUp } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -20,15 +21,15 @@ const Footer = () => {
         </div>
         <div>
           <button
-            className="btn btn-sm rounded-circle d-flex align-items-center justify-content-center"
+            className="btn rounded-circle d-flex align-items-center justify-content-center"
             style={{
               width: "36px",
               height: "36px",
-              backgroundColor: "#0e0f28",
+              border: "1px solid #6e59f5",
             }}
             onClick={scrollToTop}
           >
-            <ArrowUp size={20} />
+            <FontAwesomeIcon icon={faArrowUp} style={{ color: "#6e59f5" }} />
           </button>
         </div>
       </div>
