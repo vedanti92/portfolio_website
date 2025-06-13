@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="border-top py-5">
       <div className="footer-container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 px-5">
         <div>
-          <p style={{ color: "#9ca2aa" }}>
+          <p style={{ color: "#9398a1" }}>
             &copy; {new Date().getFullYear()} Vedanti Bagade. All rights
             reserved.
           </p>
