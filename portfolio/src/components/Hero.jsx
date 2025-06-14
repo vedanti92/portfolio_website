@@ -87,7 +87,7 @@ const Hero = () => {
           </div>
 
           {/* Profile Photo */}
-          <div className="col-md-6 d-flex justify-content-center animate-fade-in delay-300 mt-5">
+          {/* <div className="col-md-6 d-flex justify-content-center animate-fade-in delay-300 mt-5">
             <div
               className="rounded-circle overflow-hidden shadow gradient-border"
               style={{ 
@@ -101,6 +101,35 @@ const Hero = () => {
                 className="img-fluid w-100 h-100 object-fit-cover"
                 style={{ borderRadius: "50%", objectPosition: "center 65%" }}
               />
+            </div>
+          </div> */}
+
+          <div className="col-md-6 d-flex justify-content-center animate-fade-in delay-300">
+            <div
+              className="hero-photo-wrapper"
+              onMouseMove={(e) => {
+                const wrapper = e.currentTarget;
+                const rect = wrapper.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                wrapper.style.transform = `rotateX(${-y * 10}deg) rotateY(${
+                  x * 10
+                }deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "rotateX(0deg) rotateY(0deg)";
+              }}
+            >
+              <div className="hero-photo-border">
+                <div className="hero-photo-inner">
+                  <img
+                    src="./profile.png"
+                    alt="Profile Photo"
+                    className="img-fluid"
+                    style={{ objectPosition: "center 65%" }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

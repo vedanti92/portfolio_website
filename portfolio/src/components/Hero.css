@@ -95,3 +95,58 @@
   border-radius: 50%;
   z-index: -1;
 }
+
+.hero-photo-wrapper {
+  width: 22rem;
+  height: 22rem;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(100, 100, 255, 0.3);
+}
+
+.hero-photo-border {
+  width: 100%;
+  height: 100%;
+  padding: 10px; /* Space between glow ring and photo */
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    #030711,
+    transparent
+  );
+  box-shadow: 0 0 30px #4772E8;
+  transition: box-shadow 0.4s ease;
+}
+
+.hero-photo-wrapper:hover .hero-photo-border {
+  box-shadow: 0 0 50px white,
+    0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.hero-photo-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: scaleIn 1s ease-in-out forwards;
+}
+
+.hero-photo-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Entry animation */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
