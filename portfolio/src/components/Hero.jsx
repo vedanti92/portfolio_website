@@ -69,17 +69,38 @@ const Hero = () => {
               className="fs-5 mb-4"
               style={{ color: "#9398a1", fontStyle: "italic" }}
             >
-              I craft thoughtful, elegant, and user-centered web
-              applications — driven by a keen eye for detail and a deep passion
-              for design.
+              I craft thoughtful, elegant, and user-centered web applications —
+              driven by a keen eye for detail and a deep passion for design.
             </p>
             <div className="d-flex flex-column flex-sm-row gap-3">
               <a href="#projects">
-                <button className="project-box text-white fw-bold fs-5 px-3 py-2">View My Work</button>
+                <button className="project-box text-white fw-bold fs-5 px-3 py-2">
+                  View My Work
+                </button>
               </a>
               <a href="#contact">
-                <button className="contact-box fw-bold fs-5 px-3 py-2">Contact Me</button>
+                <button className="contact-box fw-bold fs-5 px-3 py-2">
+                  Contact Me
+                </button>
               </a>
+            </div>
+          </div>
+
+          {/* Profile Photo */}
+          <div className="col-md-6 d-flex justify-content-center animate-fade-in delay-300 mt-5">
+            <div
+              className="rounded-circle overflow-hidden shadow gradient-border"
+              style={{ 
+                width: "16rem", 
+                height: "16rem"
+              }}
+            >
+              <img
+                src="./profile.png"
+                alt="Developer profile"
+                className="img-fluid w-100 h-100 object-fit-cover"
+                style={{ borderRadius: "50%", objectPosition: "center 65%" }}
+              />
             </div>
           </div>
         </div>
