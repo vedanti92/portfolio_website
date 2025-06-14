@@ -11,12 +11,15 @@
 .top-25 {
   top: 25%;
 }
+
 .start-25 {
   left: 25%;
 }
+
 .bottom-33 {
   bottom: 33%;
 }
+
 .end-25 {
   right: 25%;
 }
@@ -24,6 +27,7 @@
 .gradient-text {
   background: linear-gradient(to right, #6c58f1, #5867ee);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -34,9 +38,11 @@
 .animate-fade-in {
   animation: fadeIn 1s ease-in both;
 }
+
 .delay-300 {
   animation-delay: 0.3s;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;

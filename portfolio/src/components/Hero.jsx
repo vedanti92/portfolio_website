@@ -65,6 +65,14 @@ const Hero = () => {
             >
               Full Stack Developer
             </h2>
+            <p
+              className="fs-5 mb-4"
+              style={{ color: "#9398a1", fontStyle: "italic" }}
+            >
+              I craft thoughtful, elegant, and user-centered web
+              applications—driven by a keen eye for detail and a deep passion
+              for design.
+            </p>
           </div>
         </div>
       </div>
