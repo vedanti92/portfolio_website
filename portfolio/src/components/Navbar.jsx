@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav
       className={`navbar navbar-expand-md fixed-top ${
         isScrolled
-          ? "bg-light shadow-sm py-2 backdrop-blur"
+          ? "bg-transparent shadow-sm py-2 backdrop-blur"
           : "bg-transparent py-3"
       } transition`}
       style={{
