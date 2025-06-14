@@ -66,3 +66,15 @@
     transform: translateY(-6px);
   }
 }
+
+.project-box {
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #6c58f1, #5867ee);
+}
+
+.contact-box {
+  border-radius: 5px;
+  border: 1px solid #6c58f1;
+  color: #6c58f1;
+}
