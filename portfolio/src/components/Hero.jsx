@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Hero.css";
 
 const Hero = () => {
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const nameRef = useRef(null);
+  const intervalRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
+
+  const handleMouseOver = () => {
+    let iteration = 0;
+    if (intervalRef.current) clearInterval(intervalRef.current);
+
+    intervalRef.current = setInterval(() => {
+      const originalText = "Full Stack Developer";
+      if (nameRef.current) {
+        nameRef.current.innerText = originalText
+          .split("")
+          .map((letter, index) => {
+            if (letter === " ") return " ";
+            if (index < iteration) return originalText[index];
+            return letters[Math.floor(Math.random() * 26)];
+          })
+          .join("");
+
+        if (iteration >= originalText.length) {
+          clearInterval(intervalRef.current);
+        }
+
+        iteration += 1 / 3;
+      }
+    }, 30);
+  };
+
   return <section></section>;
 };
 
