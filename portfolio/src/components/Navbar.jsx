@@ -35,7 +35,7 @@ const Navbar = () => {
         zIndex: 1050,
       }}
     >
-      <div className="navbar-container d-flex justify-content-between align-items-center px-3">
+      <div className="navbar-container d-flex justify-content-between align-items-center px-3 w-100">
         <a
           href="#home"
           className="navbar-brand fw-bold"
@@ -54,18 +54,26 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="d-md-none btn btn-link text-dark p-0"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
-          style={{ zIndex: 1060, position: "relative" }}
-        >
-          {isMobileMenuOpen ? (
-            <X size={24} style={{ color: "#9398a1" }} />
-          ) : (
-            <Menu size={24} style={{ color: "#9398a1" }} />
-          )}
-        </button>
+        <div className="d-md-none">
+          <button
+            className="btn btn-link text-dark p-0"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+            style={{ 
+              zIndex: 1060, 
+              position: "relative",
+              outline: "none",
+              boxShadow: "none",
+              textDecoration: "none"
+            }}
+          >
+            {isMobileMenuOpen ? (
+              <X size={24} style={{ color: "#9398a1" }} />
+            ) : (
+              <Menu size={24} style={{ color: "#9398a1" }} />
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
