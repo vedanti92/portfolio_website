@@ -52,13 +52,19 @@ const Hero = () => {
         <div className="row align-items-center justify-content-between g-5">
           {/* Text Content */}
           <div className="col-md-6 animate-fade-in">
-            <p className="fs-5 text-accent mb-2">Hello, my name is</p>
-            <h1 className="display-4 fw-bold mb-3">Vedanti Bagade</h1>
+            <p className="fs-5 text-accent mb-2" style={{ color: "#3776dc" }}>
+              Hello, my name is
+            </p>
+            <h1 className="display-4 fw-bold mb-3" style={{ color: "white" }}>
+              Vedanti Bagade
+            </h1>
             <h2
               ref={nameRef}
               onMouseOver={handleMouseOver}
               className="fw-bold mb-4 gradient-text cursor-pointer display-6"
-            ></h2>
+            >
+              Full Stack Developer
+            </h2>
           </div>
         </div>
       </div>
