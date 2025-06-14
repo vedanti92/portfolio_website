@@ -78,3 +78,20 @@
   border: 1px solid #6c58f1;
   color: #6c58f1;
 }
+
+.gradient-border {
+  position: relative;
+  background: white;
+  border-radius: 50%;
+  padding: 4px;
+  z-index: 1;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  background: linear-gradient(to bottom, #4c6fea, #4464d2);
+  border-radius: 50%;
+  z-index: -1;
+}
