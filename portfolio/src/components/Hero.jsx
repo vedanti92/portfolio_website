@@ -38,11 +38,29 @@ const Hero = () => {
   };
 
   return (
-    <section id="home">
+    <section
+      id="home"
+      className="position-relative min-vh-100 d-flex align-items-center py-5 overflow-hidden mx-5"
+    >
       {/* Glowing Circles */}
       <div className="position-absolute w-100 h-100 top-0 start-0 z-n1">
         <div className="glow-circle bg-primary top-25 start-25"></div>
         <div className="glow-circle bg-accent bottom-33 end-25"></div>
+      </div>
+
+      <div className="hero-container pt-5">
+        <div className="row align-items-center justify-content-between g-5">
+          {/* Text Content */}
+          <div className="col-md-6 animate-fade-in">
+            <p className="fs-5 text-accent mb-2">Hello, my name is</p>
+            <h1 className="display-4 fw-bold mb-3">Vedanti Bagade</h1>
+            <h2
+              ref={nameRef}
+              onMouseOver={handleMouseOver}
+              className="fw-bold mb-4 gradient-text cursor-pointer display-6"
+            ></h2>
+          </div>
+        </div>
       </div>
     </section>
   );
