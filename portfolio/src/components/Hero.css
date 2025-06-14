@@ -1,0 +1,62 @@
+.glow-circle {
+  position: absolute;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.top-25 {
+  top: 25%;
+}
+.start-25 {
+  left: 25%;
+}
+.bottom-33 {
+  bottom: 33%;
+}
+.end-25 {
+  right: 25%;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #6c58f1, #5867ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in both;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
