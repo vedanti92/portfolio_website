@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./About.css";
+import AnimatedSection from "./AnimatedSection";
 
 const About = () => {
   const skills = [
@@ -18,47 +19,11 @@ const About = () => {
     "Render",
   ];
 
-  // Scroll Animation
-  const useScrollAnimation = (delay = 0) => {
-    const ref = useRef(null);
-    const [visible, setVisible] = useState(false);
-
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setVisible(true);
-            observer.unobserve(entry.target);
-          }
-        },
-        { threshold: 0.1 }
-      );
-
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-
-      return () => observer.disconnect();
-    }, []);
-
-    return { ref, visible, delay };
-  };
-
-  const AnimatedSection = ({ children, delay = 0 }) => {
-    const { ref, visible } = useScrollAnimation(delay);
-    return (
-      <div
-        ref={ref}
-        className={`scroll-animate ${visible ? "visible" : ""}`}
-        style={{ transitionDelay: `${delay}ms` }}
-      >
-        {children}
-      </div>
-    );
-  };
-
   return (
-    <section id="about" className="bg-light custom-bg-opacity mx-5 my-3 text-white">
+    <section
+      id="about"
+      className="bg-light custom-bg-opacity mx-5 my-3 text-white"
+    >
       <div className="about-container">
         <AnimatedSection>
           <h2 className="display-5 fw-bold mb-2">About Me</h2>
@@ -78,12 +43,22 @@ const About = () => {
             </AnimatedSection>
             <AnimatedSection delay={300}>
               <p className="lead mb-4">
-              What truly excites me is bringing ideas to life — turning concepts into fully functional web experiences that not only meet user needs but also exceed expectations. I strive to build applications that are not just efficient, but thoughtfully designed and enjoyable to use. To achieve this, I stay up-to-date with the latest trends, tools, and best practices in the ever-evolving world of web development, continuously learning and experimenting to craft innovative, engaging solutions.
+                What truly excites me is bringing ideas to life — turning
+                concepts into fully functional web experiences that not only
+                meet user needs but also exceed expectations. I strive to build
+                applications that are not just efficient, but thoughtfully
+                designed and enjoyable to use. To achieve this, I stay
+                up-to-date with the latest trends, tools, and best practices in
+                the ever-evolving world of web development, continuously
+                learning and experimenting to craft innovative, engaging
+                solutions.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={400}>
               <p className="lead">
-              When I’m not coding, you’ll likely find me exploring new technologies, contributing to open-source projects, or unwinding through my favorite hobbies.
+                When I’m not coding, you’ll likely find me exploring new
+                technologies, contributing to open-source projects, or unwinding
+                through my favorite hobbies.
               </p>
             </AnimatedSection>
           </div>
