@@ -19,12 +19,11 @@
 .timeline-line {
   position: absolute;
   left: 50%;
-  top: 55px; /* Start from first dot */
   transform: translateX(-50%);
   width: 2px;
-  height: 45rem; /* Adjust to end at last dot */
   background-color: #9398a1;
   z-index: 1;
+  transition: height 0.3s ease;
 }
 
 /* Hover shadow for cards */
@@ -32,7 +31,25 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive fix for row direction */
+/* Responsive styles */
+@media (max-width: 767px) {
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-dot {
+    left: 20px;
+  }
+
+  .timeline-item {
+    margin-left: 2px;
+  }
+
+  .timeline-item .col-md-6 {
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .timeline-item {
     position: relative;
