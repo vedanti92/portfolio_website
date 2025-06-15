@@ -58,7 +58,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="bg-light custom-bg-opacity mx-5">
+    <section id="about" className="bg-light custom-bg-opacity m-5 text-white">
       <div className="about-container">
         <AnimatedSection>
           <h2 className="display-5 fw-bold mb-2">About Me</h2>
@@ -78,17 +78,12 @@ const About = () => {
             </AnimatedSection>
             <AnimatedSection delay={300}>
               <p className="lead mb-4">
-                I enjoy solving complex problems and learning new technologies.
-                My approach combines technical expertise with creative thinking
-                to deliver solutions that meet both user needs and business
-                goals.
+              What truly excites me is bringing ideas to life — turning concepts into fully functional web experiences that not only meet user needs but also exceed expectations. I strive to build applications that are not just efficient, but thoughtfully designed and enjoyable to use. To achieve this, I stay up-to-date with the latest trends, tools, and best practices in the ever-evolving world of web development, continuously learning and experimenting to craft innovative, engaging solutions.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={400}>
               <p className="lead">
-                When I'm not coding, you can find me exploring new technologies,
-                contributing to open-source projects, or enjoying outdoor
-                activities.
+              When I’m not coding, you’ll likely find me exploring new technologies, contributing to open-source projects, or unwinding through my favorite hobbies.
               </p>
             </AnimatedSection>
           </div>
