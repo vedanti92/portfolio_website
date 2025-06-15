@@ -79,23 +79,6 @@
   color: #6c58f1;
 }
 
-.gradient-border {
-  position: relative;
-  background: white;
-  border-radius: 50%;
-  padding: 4px;
-  z-index: 1;
-}
-
-.gradient-border::before {
-  content: "";
-  position: absolute;
-  inset: -4px;
-  background: linear-gradient(to bottom, #4c6fea, #4464d2);
-  border-radius: 50%;
-  z-index: -1;
-}
-
 .hero-photo-wrapper {
   width: 22rem;
   height: 22rem;
@@ -110,18 +93,13 @@
   height: 100%;
   padding: 10px; /* Space between glow ring and photo */
   border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    #030711,
-    transparent
-  );
-  box-shadow: 0 0 30px #4772E8;
+  background: radial-gradient(circle at center, #030711, transparent);
+  box-shadow: 0 0 30px #4772e8;
   transition: box-shadow 0.4s ease;
 }
 
 .hero-photo-wrapper:hover .hero-photo-border {
-  box-shadow: 0 0 50px white,
-    0 0 10px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 50px white, 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
 .hero-photo-inner {
