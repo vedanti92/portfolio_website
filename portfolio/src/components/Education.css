@@ -1,0 +1,52 @@
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Timeline vertical center line */
+.timeline-container {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 55px; /* Start from first dot */
+  transform: translateX(-50%);
+  width: 2px;
+  height: 45rem; /* Adjust to end at last dot */
+  background-color: #9398a1;
+  z-index: 1;
+}
+
+/* Hover shadow for cards */
+.hover-shadow:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive fix for row direction */
+@media (min-width: 768px) {
+  .timeline-item {
+    position: relative;
+  }
+
+  .timeline-item.flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .timeline-item .col-md-6:first-child {
+    order: 1;
+  }
+
+  .timeline-item.flex-row-reverse .col-md-6:first-child {
+    order: 2;
+  }
+}
