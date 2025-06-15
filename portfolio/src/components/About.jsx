@@ -71,7 +71,8 @@ const About = () => {
               {skills.map((skill, index) => (
                 <span
                   key={index}
-                  className="badge rounded-pill custom-skill-pill"
+                  className="badge rounded-pill custom-skill-pill text-white"
+                  style={{ backgroundColor: "#161e50" }}
                 >
                   {skill}
                 </span>

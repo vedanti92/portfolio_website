@@ -86,6 +86,7 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Profile */}
           <div className="col-md-6 d-flex justify-content-center animate-fade-in delay-300">
             <div
               className="hero-photo-wrapper"
@@ -115,6 +116,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        <div style={{ height: "50px" }}></div>
       </div>
     </section>
   );
