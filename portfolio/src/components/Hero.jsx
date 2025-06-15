@@ -86,24 +86,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Profile Photo */}
-          {/* <div className="col-md-6 d-flex justify-content-center animate-fade-in delay-300 mt-5">
-            <div
-              className="rounded-circle overflow-hidden shadow gradient-border"
-              style={{ 
-                width: "16rem", 
-                height: "16rem"
-              }}
-            >
-              <img
-                src="./profile.png"
-                alt="Developer profile"
-                className="img-fluid w-100 h-100 object-fit-cover"
-                style={{ borderRadius: "50%", objectPosition: "center 65%" }}
-              />
-            </div>
-          </div> */}
-
           <div className="col-md-6 d-flex justify-content-center animate-fade-in delay-300">
             <div
               className="hero-photo-wrapper"
