@@ -58,7 +58,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="bg-light custom-bg-opacity">
+    <section id="about" className="bg-light custom-bg-opacity mx-5">
       <div className="about-container">
         <AnimatedSection>
           <h2 className="display-5 fw-bold mb-2">About Me</h2>
