@@ -92,7 +92,8 @@ const Education = () => {
     <section id="education" className="mx-5 my-5">
       <div className="education-container">
         <AnimatedSection>
-          <h2 className="display-5 fw-bold mb-2">Education</h2>
+          <h2 className="display-5 fw-bold mb-2 text-white">Education</h2>
+          <div className="custom-underline mb-4"></div>
           <div className="timeline-underline mb-5"></div>
         </AnimatedSection>
 
