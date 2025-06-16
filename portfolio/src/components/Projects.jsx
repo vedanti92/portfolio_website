@@ -55,11 +55,12 @@ const Projects = () => {
           <div className="custom-underline mb-4"></div>
         </AnimatedSection>
 
-        <div className="d-flex flex-column gap-5">
+        <div className="d-flex flex-column gap-5 justify-content-center align-items-center">
           {projects.map((project, index) => (
             <AnimatedSection key={project.id} delay={index * 200}>
               <div className="row g-4 align-items-center">
-                <div className="col-md-7">
+                <div className="col-md-1"></div>
+                <div className="col-md-4">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -67,9 +68,13 @@ const Projects = () => {
                     style={{ height: "250px", objectFit: "cover" }}
                   />
                 </div>
-                <div className="col-md-5">
-                  <h3 className="h4 fw-bold mb-3">{project.title}</h3>
-                  <p className="text-muted mb-3">{project.description}</p>
+                <div className="col-md-6">
+                  <h3 className="h4 fw-bold mb-3 text-white">
+                    {project.title}
+                  </h3>
+                  <p className="mb-3" style={{ color: "#9398a1" }}>
+                    {project.description}
+                  </p>
 
                   <div className="mb-4 d-flex flex-wrap gap-2">
                     {project.tags.map((tag, i) => (
