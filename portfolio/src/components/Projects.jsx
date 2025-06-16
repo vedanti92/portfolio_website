@@ -50,7 +50,7 @@ const Projects = () => {
       <div className="projects-container">
         <AnimatedSection>
           <h2 className="display-5 fw-bold mb-2 text-white">
-            Featured Projects
+            Projects
           </h2>
           <div className="custom-underline mb-4"></div>
         </AnimatedSection>
