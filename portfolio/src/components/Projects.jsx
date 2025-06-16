@@ -11,8 +11,7 @@ const Projects = () => {
       description:
         "An online platform inspired by Airbnb, that connects travelers looking for short-term accommodations with property owners who want to rent out their space. It offers a wide range of listings created by the property owners, allowing travelers to explore the property details and provide a feedback based on their experiences!",
       tags: ["MongoDB", "EJS", "Express.js", "Node.js", "Bootstrap"],
-      image:
-        "./Home.jpg",
+      image: "./Home.jpg",
       demo: "#",
       source: "#",
     },
@@ -30,8 +29,7 @@ const Projects = () => {
         "Material UI",
         "Canva",
       ],
-      image:
-        "./Donation.jpg",
+      image: "./Donation.jpg",
       demo: "#",
       source: "#",
     },
@@ -41,8 +39,7 @@ const Projects = () => {
       description:
         "A visually engaging restaurant website with an aesthetically pleasing menu listed under starters, mains, drinks, and desserts. WordPress-based, the site features highlighted dishes, and the website can be easily navigated by visitors to read and discover recipes. Aesthetically and user-experience-focused, it has minimalist design, responsive layout, and easy navigation.",
       tags: ["WordPress", "Elementor", "Astra", "Canva"],
-      image:
-        "./Restaurant.jpg",
+      image: "./Restaurant.jpg",
       demo: "#",
       source: "#",
     },
