@@ -12,8 +12,8 @@ const Projects = () => {
         "An online platform inspired by Airbnb, that connects travelers looking for short-term accommodations with property owners who want to rent out their space. It offers a wide range of listings created by the property owners, allowing travelers to explore the property details and provide a feedback based on their experiences!",
       tags: ["MongoDB", "EJS", "Express.js", "Node.js", "Bootstrap"],
       image: "./Home.jpg",
-      demo: "#",
-      source: "#",
+      demo: "https://wanderlust-qgxn.onrender.com/listings",
+      source: "https://github.com/vedanti92/wanderlust-app",
     },
     {
       id: 2,
@@ -30,8 +30,8 @@ const Projects = () => {
         "Canva",
       ],
       image: "./Donation.jpg",
-      demo: "#",
-      source: "#",
+      demo: "https://nobledeeds.onrender.com/",
+      source: "https://github.com/vedanti92/nobledeeds",
     },
     {
       id: 3,
@@ -40,8 +40,8 @@ const Projects = () => {
         "A visually engaging restaurant website with an aesthetically pleasing menu listed under starters, mains, drinks, and desserts. WordPress-based, the site features highlighted dishes, and the website can be easily navigated by visitors to read and discover recipes. Aesthetically and user-experience-focused, it has minimalist design, responsive layout, and easy navigation.",
       tags: ["WordPress", "Elementor", "Astra", "Canva"],
       image: "./Restaurant.jpg",
-      demo: "#",
-      source: "#",
+      demo: "https://tabletales.infinityfreeapp.com/",
+      source: "https://github.com/vedanti92/tabletales",
     },
   ];
 
@@ -91,7 +91,11 @@ const Projects = () => {
                       style={{ backgroundColor: "transparent" }}
                     >
                       {project.tags.map((tag, i) => (
-                        <span key={i} className="badge rounded-pill text-white">
+                        <span
+                          key={i}
+                          className="badge rounded-pill"
+                          style={{ color: "#6c58f1", fontWeight: "600", fontSize: "15px" }}
+                        >
                           {tag}
                         </span>
                       ))}
@@ -103,8 +107,11 @@ const Projects = () => {
                     >
                       <a
                         href={project.demo}
-                        className="text-primary fw-medium d-flex align-items-center gap-1 text-decoration-none"
-                        style={{ backgroundColor: "transparent" }}
+                        className="fw-medium d-flex align-items-center gap-1 text-decoration-none"
+                        style={{
+                          backgroundColor: "transparent",
+                          color: "#6c58f1",
+                        }}
                       >
                         Live Demo{" "}
                         <ArrowRight
@@ -114,8 +121,11 @@ const Projects = () => {
                       </a>
                       <a
                         href={project.source}
-                        className="text-secondary fw-medium d-flex align-items-center gap-1 text-decoration-none"
-                        style={{ backgroundColor: "transparent" }}
+                        className="fw-medium d-flex align-items-center gap-1 text-decoration-none"
+                        style={{
+                          backgroundColor: "transparent",
+                          color: "#9398a1",
+                        }}
                       >
                         Source Code{" "}
                         <Github
@@ -134,8 +144,9 @@ const Projects = () => {
         <AnimatedSection delay={600}>
           <div className="text-center mt-5">
             <a
-              href="#"
-              className="text-primary fw-medium text-decoration-none d-inline-flex align-items-center gap-1"
+              href="https://github.com/vedanti92"
+              className="fw-medium text-decoration-none d-inline-flex align-items-center gap-1"
+              style={{ color: "#6c58f1" }}
             >
               View All Projects <ArrowRight size={16} />
             </a>
