@@ -58,48 +58,72 @@ const Projects = () => {
         <div className="d-flex flex-column gap-5 justify-content-center align-items-center">
           {projects.map((project, index) => (
             <AnimatedSection key={project.id} delay={index * 200}>
-              <div className="row g-4 align-items-center">
-                <div className="col-md-1"></div>
-                <div className="col-md-4">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="img-fluid rounded shadow-sm project-img"
-                    style={{ height: "250px", objectFit: "cover" }}
-                  />
-                </div>
-                <div className="col-md-6">
-                  <h3 className="h4 fw-bold mb-3 text-white">
-                    {project.title}
-                  </h3>
-                  <p className="mb-3" style={{ color: "#9398a1" }}>
-                    {project.description}
-                  </p>
-
-                  <div className="mb-4 d-flex flex-wrap gap-2">
-                    {project.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className="badge rounded-pill bg-light text-primary border border-primary"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+              <div className="project-card">
+                <div className="row g-4 align-items-center">
+                  <div className="col-md-1"></div>
+                  <div className="col-md-4">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="img-fluid rounded shadow-sm project-img"
+                      style={{ height: "250px", objectFit: "cover" }}
+                    />
                   </div>
+                  <div className="col-md-6">
+                    <h3
+                      className="h4 fw-bold mb-3 text-white"
+                      style={{ backgroundColor: "transparent" }}
+                    >
+                      {project.title}
+                    </h3>
+                    <p
+                      className="mb-3"
+                      style={{
+                        color: "#9398a1",
+                        backgroundColor: "transparent",
+                      }}
+                    >
+                      {project.description}
+                    </p>
 
-                  <div className="d-flex gap-3">
-                    <a
-                      href={project.demo}
-                      className="text-primary fw-medium d-flex align-items-center gap-1 text-decoration-none"
+                    <div
+                      className="mb-4 d-flex flex-wrap gap-2"
+                      style={{ backgroundColor: "transparent" }}
                     >
-                      Live Demo <ArrowRight size={16} />
-                    </a>
-                    <a
-                      href={project.source}
-                      className="text-secondary fw-medium d-flex align-items-center gap-1 text-decoration-none"
+                      {project.tags.map((tag, i) => (
+                        <span key={i} className="badge rounded-pill text-white">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div
+                      className="d-flex gap-3"
+                      style={{ backgroundColor: "transparent" }}
                     >
-                      Source Code <Github size={16} />
-                    </a>
+                      <a
+                        href={project.demo}
+                        className="text-primary fw-medium d-flex align-items-center gap-1 text-decoration-none"
+                        style={{ backgroundColor: "transparent" }}
+                      >
+                        Live Demo{" "}
+                        <ArrowRight
+                          size={16}
+                          style={{ backgroundColor: "transparent" }}
+                        />
+                      </a>
+                      <a
+                        href={project.source}
+                        className="text-secondary fw-medium d-flex align-items-center gap-1 text-decoration-none"
+                        style={{ backgroundColor: "transparent" }}
+                      >
+                        Source Code{" "}
+                        <Github
+                          size={16}
+                          style={{ backgroundColor: "transparent" }}
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
