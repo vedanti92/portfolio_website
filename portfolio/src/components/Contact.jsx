@@ -1,6 +1,7 @@
 import React from "react";
 import { Mail, Github, Linkedin, Send } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
+import "./Contact.css";
 
 const Contact = () => {
   const handleSubmit = (event) => {
@@ -31,8 +32,8 @@ const Contact = () => {
           <div className="row g-5" style={{ backgroundColor: "#060c1e" }}>
             <div className="col-md-6" style={{ backgroundColor: "#060c1e" }}>
               <p
-                className="fs-5 mb-4 text-white"
-                style={{ backgroundColor: "#060c1e" }}
+                className="fs-5 mb-4"
+                style={{ backgroundColor: "#060c1e", color: "#9398a1" }}
               >
                 I'm currently available for freelance work or full-time
                 positions. If you have a project that you want to get started,
@@ -55,8 +56,8 @@ const Contact = () => {
                 </div>
                 <a
                   href="mailto:vedanti.r.bagade@gmail.com"
-                  className="text-decoration-none text-white hover-effect"
-                  style={{ backgroundColor: "#060c1e" }}
+                  className="text-decoration-none hover-effect"
+                  style={{ backgroundColor: "#060c1e", color: "#9398a1" }}
                 >
                   vedanti.r.bagade@gmail.com
                 </a>
@@ -79,8 +80,8 @@ const Contact = () => {
                   href="https://github.com/vedanti92"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-decoration-none text-white hover-effect"
-                  style={{ backgroundColor: "#060c1e" }}
+                  className="text-decoration-none hover-effect"
+                  style={{ backgroundColor: "#060c1e", color: "#9398a1" }}
                 >
                   github.com/vedanti92
                 </a>
@@ -103,8 +104,8 @@ const Contact = () => {
                   href="https://linkedin.com/in/vedanti92"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-decoration-none text-white hover-effect"
-                  style={{ backgroundColor: "#060c1e" }}
+                  className="text-decoration-none hover-effect"
+                  style={{ backgroundColor: "#060c1e", color: "#9398a1" }}
                 >
                   linkedin.com/in/vedanti92
                 </a>
@@ -119,27 +120,42 @@ const Contact = () => {
                 <div className="mb-3">
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control custom-input"
                     placeholder="Your Name"
                     required
+                    style={{
+                      backgroundColor: "#101434",
+                      border: "1px solid #9398a1",
+                      color: "#778599",
+                    }}
                   />
                 </div>
 
                 <div className="mb-3">
                   <input
                     type="email"
-                    className="form-control"
+                    className="form-control custom-input"
                     placeholder="Your Email"
                     required
+                    style={{
+                      backgroundColor: "#101434",
+                      border: "1px solid #9398a1",
+                      color: "#778599",
+                    }}
                   />
                 </div>
 
                 <div className="mb-3">
                   <textarea
-                    className="form-control"
+                    className="form-control custom-input"
                     rows="5"
                     placeholder="Your Message"
                     required
+                    style={{
+                      backgroundColor: "#101434",
+                      border: "1px solid #9398a1",
+                      color: "#778599",
+                    }}
                   ></textarea>
                 </div>
 
