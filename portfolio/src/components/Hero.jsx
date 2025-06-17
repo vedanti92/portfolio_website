@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="position-relative min-vh-100 d-flex align-items-center overflow-hidden mx-5 my-3"
+      className="position-relative min-vh-100 d-flex align-items-center overflow-hidden px-3 px-md-4 px-lg-5 py-3"
     >
       {/* Glowing Circles */}
       <div className="position-absolute w-100 h-100 top-0 start-0 z-n1">
