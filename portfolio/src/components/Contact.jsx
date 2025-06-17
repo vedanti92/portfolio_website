@@ -5,7 +5,7 @@ import "./Contact.css";
 import emailjs from "@emailjs/browser";
 
 // Initialize EmailJS
-emailjs.init("HZrh7B856RpJsUXNp");
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const Contact = () => {
   const form = useRef();
@@ -17,10 +17,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_093m36w", // service ID
-        "template_1vxyxw7", // template ID - replace with your actual template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        "HZrh7B856RpJsUXNp" // public key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then((result) => {
         console.log(result.text);
