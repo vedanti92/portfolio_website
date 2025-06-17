@@ -22,15 +22,20 @@ const Footer = () => {
         </div>
         <div>
           <button
-            className="btn rounded-circle d-flex align-items-center justify-content-center"
+            className="arrow-btn rounded-circle d-flex align-items-center justify-content-center"
             style={{
               width: "36px",
               height: "36px",
-              border: "1px solid #6e59f5",
+              border: "1px solid #6c58f1",
+              transition: "all 0.3s ease",
             }}
             onClick={scrollToTop}
           >
-            <FontAwesomeIcon icon={faArrowUp} style={{ color: "#6e59f5" }} />
+            <FontAwesomeIcon
+              className="arrow"
+              icon={faArrowUp}
+              style={{ color: "#6c58f1" }}
+            />
           </button>
         </div>
       </div>
