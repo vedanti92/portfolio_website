@@ -25,7 +25,7 @@ const Hobbies = () => {
         "I'm a trained Bharatanatyam dancer and have completed my Arangetram. I also love experimenting with other dance forms.",
     },
     {
-      title: "Reading Books",
+      title: "Books",
       icon: <LibraryBig size={24} />,
       description:
         "I'm an avid reader who enjoys diving into both science fiction and insightful non-fiction.",
