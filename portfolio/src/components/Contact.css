@@ -15,3 +15,24 @@
   font-style: italic !important;
   opacity: 1 !important;
 }
+
+.resume-btn {
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  color: #6c58f1;
+  border-color: #6c58f1;
+}
+
+.send-btn {
+  background: linear-gradient(to right, #6e5af6, #3a7ae4);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 0px;
+}

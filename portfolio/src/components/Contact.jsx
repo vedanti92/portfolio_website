@@ -1,15 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Mail, Github, Linkedin, Send } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import "./Contact.css";
+import emailjs from "@emailjs/browser";
+
+// Initialize EmailJS
+emailjs.init("HZrh7B856RpJsUXNp");
 
 const Contact = () => {
+  const form = useRef();
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(
-      "Message sent!\nThank you for your message. I'll get back to you soon."
-    );
-    event.target.reset();
+    setIsSubmitting(true);
+
+    emailjs
+      .sendForm(
+        "service_093m36w", // service ID
+        "template_1vxyxw7", // template ID - replace with your actual template ID
+        form.current,
+        "HZrh7B856RpJsUXNp" // public key
+      )
+      .then((result) => {
+        console.log(result.text);
+        alert("Message sent successfully!");
+        event.target.reset();
+      })
+      .catch((error) => {
+        console.log(error.text);
+        alert("Oops! Something went wrong. Please try again later.");
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -19,8 +43,8 @@ const Contact = () => {
           <h2 className="display-5 fw-bold mb-2 text-white">Get In Touch</h2>
           <div className="custom-underline mb-4"></div>
         </AnimatedSection>
-        <a href="/resume.pdf" download className="btn btn-outline-light">
-          Download Resume
+        <a href="/resume.pdf" download>
+          <button className="resume-btn">Download Resume</button>
         </a>
       </div>
 
@@ -114,19 +138,20 @@ const Contact = () => {
 
             <div className="col-md-6" style={{ backgroundColor: "#060c1e" }}>
               <form
+                ref={form}
                 onSubmit={handleSubmit}
                 style={{ backgroundColor: "#060c1e" }}
               >
                 <div className="mb-3">
                   <input
                     type="text"
+                    name="user_name"
                     className="form-control custom-input"
                     placeholder="Your Name"
                     required
                     style={{
                       backgroundColor: "#101434",
                       border: "1px solid #9398a1",
-                      color: "#778599",
                     }}
                   />
                 </div>
@@ -134,19 +159,20 @@ const Contact = () => {
                 <div className="mb-3">
                   <input
                     type="email"
+                    name="user_email"
                     className="form-control custom-input"
                     placeholder="Your Email"
                     required
                     style={{
                       backgroundColor: "#101434",
                       border: "1px solid #9398a1",
-                      color: "#778599",
                     }}
                   />
                 </div>
 
                 <div className="mb-3">
                   <textarea
+                    name="message"
                     className="form-control custom-input"
                     rows="5"
                     placeholder="Your Message"
@@ -154,17 +180,17 @@ const Contact = () => {
                     style={{
                       backgroundColor: "#101434",
                       border: "1px solid #9398a1",
-                      color: "#778599",
                     }}
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2"
+                  className="send-btn w-100 d-flex align-items-center justify-content-center gap-2"
+                  disabled={isSubmitting}
                 >
                   <Send size={20} style={{ backgroundColor: "transparent" }} />
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>
