@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Github, Linkedin, Send } from 'lucide-react';
+import { Mail, Github, Linkedin, Send } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const Contact = () => {
@@ -12,7 +12,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="mx-5 my-5 p-5 rounded" style={{ backgroundColor: '#060c1e' }}>
+    <section
+      id="contact"
+      className="mx-5 my-5 p-5 rounded"
+      style={{ backgroundColor: "#060c1e" }}
+    >
       <div className="contact-container">
         <AnimatedSection>
           <h2 className="display-5 fw-bold mb-2 text-white">Get In Touch</h2>
@@ -36,42 +40,60 @@ const Contact = () => {
             </p>
 
             <div className="d-flex align-items-center mb-3">
-              <div className="me-3 p-2 rounded-circle bg-primary bg-opacity-10 text-primary">
-                <Mail size={20} />
+              <div
+                className="me-3 p-2 rounded bg-opacity-10 text-primary"
+                style={{ backgroundColor: "#101434" }}
+              >
+                <Mail
+                  size={20}
+                  style={{ backgroundColor: "transparent", color: "#6c58f1" }}
+                />
               </div>
               <a
-                href="mailto:john@example.com"
+                href="mailto:vedanti.r.bagade@gmail.com"
                 className="text-decoration-none text-white hover-effect"
               >
-                john@example.com
+                vedanti.r.bagade@gmail.com
               </a>
             </div>
 
             <div className="d-flex align-items-center mb-3">
-              <div className="me-3 p-2 rounded-circle bg-primary bg-opacity-10 text-primary">
-                <Github size={20} />
+              <div
+                className="me-3 p-2 rounded bg-opacity-10 text-primary"
+                style={{ backgroundColor: "#101434" }}
+              >
+                <Github
+                  size={20}
+                  style={{ backgroundColor: "transparent", color: "#6c58f1" }}
+                />
               </div>
               <a
-                href="https://github.com/johndoe"
+                href="https://github.com/vedanti92"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-decoration-none text-white hover-effect"
               >
-                github.com/johndoe
+                github.com/vedanti92
               </a>
             </div>
 
             <div className="d-flex align-items-center mb-3">
-              <div className="me-3 p-2 rounded-circle bg-primary bg-opacity-10 text-primary">
-                <Linkedin size={20} />
+              <div
+                className="me-3 p-2 rounded bg-opacity-10 text-primary"
+                style={{ backgroundColor: "#101434" }}
+              >
+                <Linkedin
+                  size={20}
+                  style={{ backgroundColor: "transparent", color: "#6c58f1" }}
+                />
               </div>
               <a
-                href="https://linkedin.com/in/johndoe"
+                href="https://linkedin.com/in/vedanti92"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-decoration-none text-white hover-effect"
               >
-                linkedin.com/in/johndoe
+                linkedin.com/in/vedanti92
               </a>
             </div>
           </div>
