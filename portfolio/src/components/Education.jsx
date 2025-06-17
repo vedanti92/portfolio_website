@@ -123,8 +123,11 @@ const Education = () => {
                         style={{ backgroundColor: "#060c1e" }}
                       >
                         <div
-                          className="me-3 p-2 text-primary rounded"
-                          style={{ border: "2px solid #0d6efd" }}
+                          className="me-3 p-2 rounded"
+                          style={{
+                            border: "2px solid #6c58f1",
+                            color: "#6c58f1",
+                          }}
                         >
                           <Icon size={24} />
                         </div>
