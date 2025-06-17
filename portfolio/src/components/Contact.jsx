@@ -17,29 +17,45 @@ const Contact = () => {
       className="mx-5 my-5 p-5 rounded"
       style={{ backgroundColor: "#060c1e" }}
     >
-      <div className="contact-container">
+      <div
+        className="contact-container"
+        style={{ backgroundColor: "transparent" }}
+      >
         <AnimatedSection>
-          <h2 className="display-5 fw-bold mb-2 text-white">Get In Touch</h2>
+          <h2
+            className="display-5 fw-bold mb-2 text-white"
+            style={{ backgroundColor: "transparent" }}
+          >
+            Get In Touch
+          </h2>
           <div className="custom-underline mb-4"></div>
-          <div className="timeline-underline mb-5"></div>
         </AnimatedSection>
 
-        <div className="text-end mb-4">
+        <div
+          className="text-end mb-4"
+          style={{ backgroundColor: "transparent" }}
+        >
           <a href="/resume.pdf" download className="btn btn-outline-light">
             Download Resume
           </a>
         </div>
 
-        <div className="row g-5">
-          <div className="col-md-6">
-            <p className="fs-5 mb-4 text-white">
+        <div className="row g-5" style={{ backgroundColor: "transparent" }}>
+          <div className="col-md-6" style={{ backgroundColor: "transparent" }}>
+            <p
+              className="fs-5 mb-4 text-white"
+              style={{ backgroundColor: "transparent" }}
+            >
               I'm currently available for freelance work or full-time positions.
               If you have a project that you want to get started, think you need
               my help with something, or just want to say hello, then get in
               touch.
             </p>
 
-            <div className="d-flex align-items-center mb-3">
+            <div
+              className="d-flex align-items-center mb-3"
+              style={{ backgroundColor: "transparent" }}
+            >
               <div
                 className="me-3 p-2 rounded bg-opacity-10 text-primary"
                 style={{ backgroundColor: "#101434" }}
@@ -52,12 +68,16 @@ const Contact = () => {
               <a
                 href="mailto:vedanti.r.bagade@gmail.com"
                 className="text-decoration-none text-white hover-effect"
+                style={{ backgroundColor: "transparent" }}
               >
                 vedanti.r.bagade@gmail.com
               </a>
             </div>
 
-            <div className="d-flex align-items-center mb-3">
+            <div
+              className="d-flex align-items-center mb-3"
+              style={{ backgroundColor: "transparent" }}
+            >
               <div
                 className="me-3 p-2 rounded bg-opacity-10 text-primary"
                 style={{ backgroundColor: "#101434" }}
@@ -72,12 +92,16 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-decoration-none text-white hover-effect"
+                style={{ backgroundColor: "transparent" }}
               >
                 github.com/vedanti92
               </a>
             </div>
 
-            <div className="d-flex align-items-center mb-3">
+            <div
+              className="d-flex align-items-center mb-3"
+              style={{ backgroundColor: "transparent" }}
+            >
               <div
                 className="me-3 p-2 rounded bg-opacity-10 text-primary"
                 style={{ backgroundColor: "#101434" }}
@@ -92,14 +116,18 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-decoration-none text-white hover-effect"
+                style={{ backgroundColor: "transparent" }}
               >
                 linkedin.com/in/vedanti92
               </a>
             </div>
           </div>
 
-          <div className="col-md-6">
-            <form onSubmit={handleSubmit}>
+          <div className="col-md-6" style={{ backgroundColor: "transparent" }}>
+            <form
+              onSubmit={handleSubmit}
+              style={{ backgroundColor: "transparent" }}
+            >
               <div className="mb-3">
                 <input
                   type="text"
@@ -131,7 +159,7 @@ const Contact = () => {
                 type="submit"
                 className="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2"
               >
-                <Send size={20} />
+                <Send size={20} style={{ backgroundColor: "transparent" }} />
                 Send Message
               </button>
             </form>
