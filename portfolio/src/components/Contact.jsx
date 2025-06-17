@@ -1,4 +1,5 @@
 import React from "react";
+import { Mail, Github, Linkedin, Send } from 'lucide-react';
 import AnimatedSection from "./AnimatedSection";
 
 const Contact = () => {
@@ -11,8 +12,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-5 bg-light">
-      <div className="container">
+    <section id="contact" className="mx-5 my-5 p-5 rounded" style={{ backgroundColor: '#060c1e' }}>
+      <div className="contact-container">
         <AnimatedSection>
           <h2 className="display-5 fw-bold mb-2 text-white">Get In Touch</h2>
           <div className="custom-underline mb-4"></div>
@@ -20,14 +21,14 @@ const Contact = () => {
         </AnimatedSection>
 
         <div className="text-end mb-4">
-          <a href="/resume.pdf" download className="btn btn-outline-primary">
+          <a href="/resume.pdf" download className="btn btn-outline-light">
             Download Resume
           </a>
         </div>
 
         <div className="row g-5">
           <div className="col-md-6">
-            <p className="fs-5 mb-4">
+            <p className="fs-5 mb-4 text-white">
               I'm currently available for freelance work or full-time positions.
               If you have a project that you want to get started, think you need
               my help with something, or just want to say hello, then get in
@@ -36,11 +37,11 @@ const Contact = () => {
 
             <div className="d-flex align-items-center mb-3">
               <div className="me-3 p-2 rounded-circle bg-primary bg-opacity-10 text-primary">
-                <i className="bi bi-envelope-fill"></i>
+                <Mail size={20} />
               </div>
               <a
                 href="mailto:john@example.com"
-                className="text-decoration-none text-dark hover-effect"
+                className="text-decoration-none text-white hover-effect"
               >
                 john@example.com
               </a>
@@ -48,13 +49,13 @@ const Contact = () => {
 
             <div className="d-flex align-items-center mb-3">
               <div className="me-3 p-2 rounded-circle bg-primary bg-opacity-10 text-primary">
-                <i className="bi bi-github"></i>
+                <Github size={20} />
               </div>
               <a
                 href="https://github.com/johndoe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-decoration-none text-dark hover-effect"
+                className="text-decoration-none text-white hover-effect"
               >
                 github.com/johndoe
               </a>
@@ -62,13 +63,13 @@ const Contact = () => {
 
             <div className="d-flex align-items-center mb-3">
               <div className="me-3 p-2 rounded-circle bg-primary bg-opacity-10 text-primary">
-                <i className="bi bi-linkedin"></i>
+                <Linkedin size={20} />
               </div>
               <a
                 href="https://linkedin.com/in/johndoe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-decoration-none text-dark hover-effect"
+                className="text-decoration-none text-white hover-effect"
               >
                 linkedin.com/in/johndoe
               </a>
@@ -108,7 +109,7 @@ const Contact = () => {
                 type="submit"
                 className="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2"
               >
-                <i className="bi bi-send-fill"></i>
+                <Send size={20} />
                 Send Message
               </button>
             </form>
