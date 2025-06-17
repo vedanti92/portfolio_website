@@ -51,7 +51,7 @@ const Hero = () => {
       <div className="hero-container pt-5">
         <div className="row align-items-center justify-content-between">
           {/* Text Content */}
-          <div className="col-md-6 animate-fade-in">
+          <div className="col-md-6 animate-fade-in mb-5">
             <p className="fs-5 text-accent mb-2" style={{ color: "#3776dc" }}>
               Hello, my name is
             </p>

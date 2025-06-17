@@ -81,8 +81,8 @@
 
 .hero-photo-wrapper {
   margin-top: 2rem;
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
   perspective: 1000px;
   transition: transform 0.3s ease;
   border-radius: 50%;
