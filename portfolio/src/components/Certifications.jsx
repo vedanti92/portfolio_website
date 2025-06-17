@@ -57,13 +57,19 @@ const Certifications = () => {
                       </div>
                       <h5 className="card-title mb-0">{cert.title}</h5>
                     </div>
-                    <p className="small mb-1" style={{ color: "#9398a1" }}>
+                    <p
+                      className="small mb-1"
+                      style={{ color: "#9398a1", fontStyle: "italic" }}
+                    >
                       {cert.issuer}
                     </p>
                     <p className="small mb-3" style={{ color: "#9398a1" }}>
                       {cert.date}
                     </p>
-                    <p className="card-text text-secondary" style={{fontWeight: "600"}}>
+                    <p
+                      className="card-text text-secondary"
+                      style={{ fontWeight: "600" }}
+                    >
                       {cert.description}
                     </p>
                   </div>
