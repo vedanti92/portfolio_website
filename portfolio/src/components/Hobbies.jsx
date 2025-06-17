@@ -70,8 +70,8 @@ const Hobbies = () => {
             {hobbies.map((hobby, index) => (
               <div key={index} className="d-flex align-items-start gap-3 p-3">
                 <div
-                  className="p-2 text-primary rounded"
-                  style={{ border: "2px solid #0d6efd" }}
+                  className="p-2 rounded"
+                  style={{ border: "2px solid #6c58f1", color: "#6c58f1" }}
                 >
                   {hobby.icon}
                 </div>
