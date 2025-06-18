@@ -43,7 +43,7 @@ const Contact = () => {
           <h2 className="display-5 fw-bold mb-2 text-white">Get In Touch</h2>
           <div className="custom-underline mb-4"></div>
         </AnimatedSection>
-        <a href="/resume.pdf" download>
+        <a href="./Resume.pdf" download>
           <button className="resume-btn">Download Resume</button>
         </a>
       </div>
@@ -66,7 +66,7 @@ const Contact = () => {
               </p>
 
               <div
-                className="d-flex align-items-center mb-3"
+                className="d-flex align-items-center mb-3 flex-wrap"
                 style={{ backgroundColor: "#060c1e" }}
               >
                 <div
@@ -80,7 +80,7 @@ const Contact = () => {
                 </div>
                 <a
                   href="mailto:vedanti.r.bagade@gmail.com"
-                  className="text-decoration-none hover-effect"
+                  className="text-decoration-none hover-effect text-break"
                   style={{ backgroundColor: "#060c1e", color: "#9398a1" }}
                 >
                   vedanti.r.bagade@gmail.com
@@ -88,7 +88,7 @@ const Contact = () => {
               </div>
 
               <div
-                className="d-flex align-items-center mb-3"
+                className="d-flex align-items-center mb-3 flex-wrap"
                 style={{ backgroundColor: "#060c1e" }}
               >
                 <div
@@ -104,7 +104,7 @@ const Contact = () => {
                   href="https://github.com/vedanti92"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-decoration-none hover-effect"
+                  className="text-decoration-none hover-effect text-break"
                   style={{ backgroundColor: "#060c1e", color: "#9398a1" }}
                 >
                   github.com/vedanti92
@@ -112,7 +112,7 @@ const Contact = () => {
               </div>
 
               <div
-                className="d-flex align-items-center mb-3"
+                className="d-flex align-items-center mb-3 flex-wrap"
                 style={{ backgroundColor: "#060c1e" }}
               >
                 <div
@@ -128,7 +128,7 @@ const Contact = () => {
                   href="https://linkedin.com/in/vedanti92"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-decoration-none hover-effect"
+                  className="text-decoration-none hover-effect text-break"
                   style={{ backgroundColor: "#060c1e", color: "#9398a1" }}
                 >
                   linkedin.com/in/vedanti92
