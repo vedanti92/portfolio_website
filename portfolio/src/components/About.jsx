@@ -8,6 +8,7 @@ const About = () => {
     "CSS",
     "JavaScript",
     "EJS",
+    "PHP",
     "React",
     "MongoDB",
     "MySQL",
