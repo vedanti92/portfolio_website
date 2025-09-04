@@ -36,10 +36,7 @@ const About = () => {
             <AnimatedSection delay={200}>
               <p className="lead mb-4">
                 I'm a passionate full stack developer with a focus on creating
-                efficient, scalable, and user-friendly web applications. With
-                over 5 years of experience in the field, I've worked on a
-                variety of projects ranging from small business websites to
-                complex enterprise applications.
+                efficient, scalable, and user-friendly web applications.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={300}>
