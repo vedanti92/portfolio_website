@@ -8,16 +8,16 @@ const About = () => {
     "CSS",
     "JavaScript",
     "EJS",
-    "PHP",
     "React",
     "MongoDB",
     "MySQL",
+    "Java",
+    "Spring Boot",
     "Express.js",
     "Node.js",
-    "Canva",
-    "WordPress",
     "Git",
-    "Render",
+    "GitHub",
+    "Canva",
   ];
 
   return (

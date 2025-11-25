@@ -13,7 +13,7 @@ const Projects = () => {
       tags: ["MongoDB", "EJS", "Express.js", "Node.js", "Bootstrap"],
       image: "./Home.jpg",
       demo: "https://wanderlust-qgxn.onrender.com/listings",
-      source: "https://github.com/vedanti92/wanderlust-app",
+      source: ["https://github.com/vedanti92/wanderlust-app"],
     },
     {
       id: 2,
@@ -31,17 +31,20 @@ const Projects = () => {
       ],
       image: "./Donation.jpg",
       demo: "https://nobledeeds.onrender.com/",
-      source: "https://github.com/vedanti92/nobledeeds",
+      source: ["https://github.com/vedanti92/nobledeeds"],
     },
     {
       id: 3,
-      title: "Table Tales",
+      title: "Xpenso",
       description:
-        "A visually engaging restaurant website with an aesthetically pleasing menu listed under starters, mains, drinks, and desserts. WordPress-based, the site features highlighted dishes, and the website can be easily navigated by visitors to read and discover recipes. Aesthetically and user-experience-focused, it has minimalist design, responsive layout, and easy navigation.",
-      tags: ["WordPress", "Elementor", "Astra", "Canva"],
-      image: "./Restaurant.jpg",
-      demo: "https://tabletales.infinityfreeapp.com/",
-      source: "https://github.com/vedanti92/tabletales",
+        "Xpenso is a personal finance management platform that helps users efficiently track and analyze their income and expenses. It allows users to record transactions, categorize spending, and gain insights through interactive dashboards and visualizations. The platform features secure authentication, real-time summaries, and filter-based transaction analysis, enabling users to make informed financial decisions. With its intuitive interface and dynamic React dashboard, Xpenso empowers users to manage their finances effectively and maintain control over their budget.",
+      tags: ["Java", "Spring Boot", "React", "MySQL", "Tailwind CSS"],
+      image: "./Money.jpg",
+      demo: "https://xpenso-app.netlify.app/",
+      source: [
+        "https://github.com/vedanti92/xpenso-frontend",
+        "https://github.com/vedanti92/xpenso-backend",
+      ],
     },
   ];
 
@@ -49,9 +52,7 @@ const Projects = () => {
     <section id="projects" className="mx-5 my-5">
       <div className="projects-container">
         <AnimatedSection>
-          <h2 className="display-5 fw-bold mb-2 text-white">
-            Projects
-          </h2>
+          <h2 className="display-5 fw-bold mb-2 text-white">Projects</h2>
           <div className="custom-underline mb-4"></div>
         </AnimatedSection>
 
@@ -94,7 +95,11 @@ const Projects = () => {
                         <span
                           key={i}
                           className="badge rounded-pill"
-                          style={{ color: "#6c58f1", fontWeight: "600", fontSize: "15px" }}
+                          style={{
+                            color: "#6c58f1",
+                            fontWeight: "600",
+                            fontSize: "15px",
+                          }}
                         >
                           {tag}
                         </span>
@@ -119,20 +124,27 @@ const Projects = () => {
                           style={{ backgroundColor: "transparent" }}
                         />
                       </a>
-                      <a
-                        href={project.source}
-                        className="fw-medium d-flex align-items-center gap-1 text-decoration-none"
-                        style={{
-                          backgroundColor: "transparent",
-                          color: "#9398a1",
-                        }}
-                      >
-                        Source Code{" "}
-                        <Github
-                          size={16}
-                          style={{ backgroundColor: "transparent" }}
-                        />
-                      </a>
+                      {project.source.map((link, idx) => (
+                        <a
+                          key={idx}
+                          href={link}
+                          className="fw-medium d-flex align-items-center gap-1 text-decoration-none"
+                          style={{
+                            backgroundColor: "transparent",
+                            color: "#9398a1",
+                          }}
+                        >
+                          {project.source.length > 1
+                            ? idx === 0
+                              ? "Frontend Code"
+                              : "Backend Code"
+                            : "Source Code"}{" "}
+                          <Github
+                            size={16}
+                            style={{ backgroundColor: "transparent" }}
+                          />
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </div>
