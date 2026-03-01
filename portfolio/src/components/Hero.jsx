@@ -106,7 +106,7 @@ const Hero = () => {
               <div className="hero-photo-border">
                 <div className="hero-photo-inner">
                   <img
-                    src="./profile.png"
+                    src="./Profile.png"
                     alt="Profile Photo"
                     className="img-fluid"
                     style={{ objectPosition: "center 65%" }}

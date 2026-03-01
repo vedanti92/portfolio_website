@@ -13,10 +13,7 @@ const Projects = () => {
       tags: ["Java", "Spring Boot", "React", "MySQL", "Tailwind CSS"],
       image: "./Money.jpg",
       demo: "https://xpenso-app.netlify.app/",
-      source: [
-        "https://github.com/vedanti92/xpenso-frontend",
-        "https://github.com/vedanti92/xpenso-backend",
-      ],
+      source: "https://github.com/vedanti92/xpenso-app",
     },
     {
       id: 2,
@@ -25,8 +22,8 @@ const Projects = () => {
         "Linkly is a secure URL shortening and analytics platform that enables users to generate compact, shareable links while tracking detailed click insights. The application allows authenticated users to create and manage short URLs, monitor click activity, and analyze performance through a clean and intuitive dashboard. With secure JWT-based authentication and user-specific data access, Linkly ensures that each user’s links and analytics remain private and protected. Featuring seamless redirection workflows and real-time click tracking, Linkly combines simplicity with powerful analytics to help users understand and optimize their link engagement.",
       tags: ["Java", "Spring Boot", "React", "MySQL", "Tailwind CSS"],
       image: "./Website.jpg",
-      demo: "https://nobledeeds.onrender.com/",
-      source: ["https://github.com/vedanti92/nobledeeds"],
+      demo: "https://linkly-clicks.netlify.app/",
+      source: "https://github.com/vedanti92/linkly-app",
     },
     {
       id: 3,
@@ -36,7 +33,7 @@ const Projects = () => {
       tags: ["MongoDB", "EJS", "Express.js", "Node.js", "Bootstrap"],
       image: "./Home.jpg",
       demo: "https://wanderlust-qgxn.onrender.com/listings",
-      source: ["https://github.com/vedanti92/wanderlust-app"],
+      source: "https://github.com/vedanti92/wanderlust-app",
     },
   ];
 
@@ -116,27 +113,20 @@ const Projects = () => {
                           style={{ backgroundColor: "transparent" }}
                         />
                       </a>
-                      {project.source.map((link, idx) => (
-                        <a
-                          key={idx}
-                          href={link}
-                          className="fw-medium d-flex align-items-center gap-1 text-decoration-none"
-                          style={{
-                            backgroundColor: "transparent",
-                            color: "#9398a1",
-                          }}
-                        >
-                          {project.source.length > 1
-                            ? idx === 0
-                              ? "Frontend Code"
-                              : "Backend Code"
-                            : "Source Code"}{" "}
-                          <Github
-                            size={16}
-                            style={{ backgroundColor: "transparent" }}
-                          />
-                        </a>
-                      ))}
+                      <a
+                        href={project.source}
+                        className="fw-medium d-flex align-items-center gap-1 text-decoration-none"
+                        style={{
+                          backgroundColor: "transparent",
+                          color: "#9398a1",
+                        }}
+                      >
+                        Source Code{" "}
+                        <Github
+                          size={16}
+                          style={{ backgroundColor: "transparent" }}
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
