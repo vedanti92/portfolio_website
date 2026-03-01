@@ -7,34 +7,6 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "WanderLust",
-      description:
-        "An online platform inspired by Airbnb, that connects travelers looking for short-term accommodations with property owners who want to rent out their space. It offers a wide range of listings created by the property owners, allowing travelers to explore the property details and provide a feedback based on their experiences!",
-      tags: ["MongoDB", "EJS", "Express.js", "Node.js", "Bootstrap"],
-      image: "./Home.jpg",
-      demo: "https://wanderlust-qgxn.onrender.com/listings",
-      source: ["https://github.com/vedanti92/wanderlust-app"],
-    },
-    {
-      id: 2,
-      title: "NobleDeeds",
-      description:
-        "A charitable giving platform that efficiently bridges generous donors and NGOs or causes that require assistance. It not only enables users to donate to active charity campaigns but also to create their own personalized fundraising campaigns. The website features real-time tracking of donations, secure payments, and NGO management, thus generating transparency and trust. Additionally, the platform's easy-to-use interface enables donors as well as campaign creators to easily use the platform and practice effective giving.",
-      tags: [
-        "MongoDB",
-        "React",
-        "Express.js",
-        "Node.js",
-        "Bootstrap",
-        "Material UI",
-        "Canva",
-      ],
-      image: "./Donation.jpg",
-      demo: "https://nobledeeds.onrender.com/",
-      source: ["https://github.com/vedanti92/nobledeeds"],
-    },
-    {
-      id: 3,
       title: "Xpenso",
       description:
         "Xpenso is a personal finance management platform that helps users efficiently track and analyze their income and expenses. It allows users to record transactions, categorize spending, and gain insights through interactive dashboards and visualizations. The platform features secure authentication, real-time summaries, and filter-based transaction analysis, enabling users to make informed financial decisions. With its intuitive interface and dynamic React dashboard, Xpenso empowers users to manage their finances effectively and maintain control over their budget.",
@@ -45,6 +17,26 @@ const Projects = () => {
         "https://github.com/vedanti92/xpenso-frontend",
         "https://github.com/vedanti92/xpenso-backend",
       ],
+    },
+    {
+      id: 2,
+      title: "Linkly",
+      description:
+        "Linkly is a secure URL shortening and analytics platform that enables users to generate compact, shareable links while tracking detailed click insights. The application allows authenticated users to create and manage short URLs, monitor click activity, and analyze performance through a clean and intuitive dashboard. With secure JWT-based authentication and user-specific data access, Linkly ensures that each user’s links and analytics remain private and protected. Featuring seamless redirection workflows and real-time click tracking, Linkly combines simplicity with powerful analytics to help users understand and optimize their link engagement.",
+      tags: ["Java", "Spring Boot", "React", "MySQL", "Tailwind CSS"],
+      image: "./Website.jpg",
+      demo: "https://nobledeeds.onrender.com/",
+      source: ["https://github.com/vedanti92/nobledeeds"],
+    },
+    {
+      id: 3,
+      title: "WanderLust",
+      description:
+        "An online platform inspired by Airbnb, that connects travelers looking for short-term accommodations with property owners who want to rent out their space. It offers a wide range of listings created by the property owners, allowing travelers to explore the property details and provide a feedback based on their experiences!",
+      tags: ["MongoDB", "EJS", "Express.js", "Node.js", "Bootstrap"],
+      image: "./Home.jpg",
+      demo: "https://wanderlust-qgxn.onrender.com/listings",
+      source: ["https://github.com/vedanti92/wanderlust-app"],
     },
   ];
 
