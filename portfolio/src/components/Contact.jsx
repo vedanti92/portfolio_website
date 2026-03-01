@@ -20,7 +20,7 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then((result) => {
         console.log(result.text);
@@ -43,7 +43,7 @@ const Contact = () => {
           <h2 className="display-5 fw-bold mb-2 text-white">Get In Touch</h2>
           <div className="custom-underline mb-4"></div>
         </AnimatedSection>
-        <a href="./Resume.pdf" download>
+        <a href="./vedanti_bagade_resume.pdf" download>
           <button className="resume-btn">Download Resume</button>
         </a>
       </div>
