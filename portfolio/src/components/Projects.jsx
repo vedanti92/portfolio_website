@@ -27,13 +27,13 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "WanderLust",
+      title: "TripTales",
       description:
         "An online platform inspired by Airbnb, that connects travelers looking for short-term accommodations with property owners who want to rent out their space. It offers a wide range of listings created by the property owners, allowing travelers to explore the property details and provide a feedback based on their experiences!",
       tags: ["MongoDB", "EJS", "Express.js", "Node.js", "Bootstrap"],
       image: "./Home.jpg",
-      demo: "https://wanderlust-qgxn.onrender.com/listings",
-      source: "https://github.com/vedanti92/wanderlust-app",
+      demo: "https://triptales-qxe8.onrender.com/listings",
+      source: "https://github.com/vedanti92/triptales-app",
     },
   ];
 
